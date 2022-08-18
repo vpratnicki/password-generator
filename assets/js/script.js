@@ -16,6 +16,38 @@
  const generateEl = document.getElementById('generate');
 
 
+ // later on i'm going to call these functions randomly based on the object names
+ const randomFunct = {
+  lower: getRandomLower,
+  upper: getRandomUpper,
+  number: getRandomNumber,
+  special: getRandomSpecials
+ };
+
+// Add event listener to generate button
+//  generateEl.addEventListener('click', () => {
+//   const length = +lengthEl.value;
+//   const hasUpper = upperCaseEl.checked;
+//   const hasLower = lowerCaseEl.checked;
+//   const hasNumber = numbersEl.checked;
+//   const hasSpecial = specialsEl.checked;
+
+//   passwordEl.innerText = generatePassword(
+//     hasLower, hasUpper, hasNumber, hasSpecial, length);
+//  });
+ generateEl.addEventListener('click', function() {
+  // get the val of all the form elments
+  const length = parseInt(lengthEl.value);
+  const hasUpper = upperCaseEl.checked;
+  const hasLower = lowerCaseEl.checked;
+  const hasNumber = numbersEl.checked;
+  const hasSpecial = specialsEl.checked;
+
+  // call the gen password function and it should return a string that we add to the innerText of the text area
+  passwordEl.innerText = generatePassword(
+    hasLower, hasUpper, hasNumber, hasSpecial, length);
+ });
+
 //specific for each requirement  (www.net-comber.com/charset.html)
 //generate lowercase letter
  function getRandomLower () {

@@ -48,6 +48,76 @@
     hasLower, hasUpper, hasNumber, hasSpecial, length);
  });
 
+ //generate password function
+ // this function needs the values from the dom
+ function generatePassword(lower, upper, number, special, length) {
+  /* 1. Init pw var
+     
+     
+     4. add final final pw to the pw var and return */  
+     // start w/ an empty string
+     let generatedPassword = '';
+
+     // counting all the trues
+     const typesCount = lower + upper + number + special;
+     console.log('typesCount: ', typesCount);
+
+     //2. filer out unchecked types
+    /*[
+      {
+        lower: true
+      },
+      {
+        upper: false
+      },
+      {
+        number: true
+      },
+      {
+        special: flase
+      }
+    ]
+
+    [
+      {
+        lower: true
+      },
+      {
+        number: true
+      }
+    ]*/
+
+    //  const typesArr = [{lower}, {upper}, {number}, {special}].filter (
+    //   item => Object.values(item)[0] // true
+    //   );
+    //  console.log('typesArr: ', typesArr);
+
+    const arrOfObj = [{lower: lower}, {upper: upper}, {number: number}, {special: special}]
+    // now get rid of anything false
+    const typesArr = arrOfObj.filter(function(item) {
+      // give me back anything with a valu of true
+      // object.values turns an objec into an array of its values
+      const isTrue = Object.values(item)[0]
+      return isTrue;
+    })
+
+     if(typesCount === 0) {
+      return '';
+     }
+     //3. Loop over length call generator function for each type
+     for (let i=0; i < length; i += typesCount) {
+      typesArr.forEach(type => {
+        const functName = Object.keys(type)[0];
+        console.log('functName: ', functName);
+
+        randomFunct[functName]();
+        generatedPassword += randomFunct[functName]();
+      });
+     }
+
+     return generatedPassword;
+ }
+
 //specific for each requirement  (www.net-comber.com/charset.html)
 //generate lowercase letter
  function getRandomLower () {

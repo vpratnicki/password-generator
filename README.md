@@ -27,11 +27,11 @@ Next, I created the individual functions that would randomly generate characters
 
 ![Screenshot 1](/assets/images/screenshot1.png)
 
-Next, I used .getElementsById to identify which of the DOM elements are needed and created a function called randomFunct, that serves as a dictionary of the individual functions that generate each random characters. I then needed to add the .addEventListener to each of the DOM element to the generate button and created a function to give values to each of the form elements. 
+Next, I used .getElementsById to identify which of the DOM elements are needed and created a function called randomFunct. This function  serves as a dictionary/directory of the individual functions that generate each of the random characters. I then added the .addEventListener the generate button and created a function to give values to each of the form elements. 
 
 ![Screenshot 2](/assets/images/screenshot2.png)
 
-Next I called the function that will generate the password function and t=told it to return a string that will be added to the innerText of the text area.
+Next I called the function that will generate the password function and told it to return a string that will be added to the innerText of the text area.
 
 ![Screenshot 3](/assets/images/screenshot3.png)
 
@@ -48,8 +48,8 @@ And then I put it all together by creating the generatePassword function!
 
 ## Website
 To view portfolio open:
-[Password Generator](https://vpratnicki.github.io/password-generator/)
+[Password Generator](https://vpratnicki.github.io/password-generator/).
 
 ## Credits
 
-To help me with this project I followed a great YouTube tutorial by Traversy Media: [https://youtu.be/duNmhKgtcsI](https://youtu.be/duNmhKgtcsI) I used this tutorial as a strating point and applied some of the technicques I leared to my code. 
+To help me with this project I followed a great YouTube tutorial by Traversy Media: [https://youtu.be/duNmhKgtcsI](https://youtu.be/duNmhKgtcsI) I used this tutorial as a starting point and applied some of the technicques I leared to my code. :)

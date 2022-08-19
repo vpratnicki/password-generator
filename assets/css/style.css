@@ -96,7 +96,11 @@ button[disabled] {
 .float-right {
   float: right;
 }
-
+.note p {
+  color: #373738;
+  font-style: italic;
+  font-size: smaller;
+}
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;

@@ -52,4 +52,4 @@ To view portfolio open:
 
 ## Credits
 
-To help me with this project I followed a great YouTube tutorial by Traversy Media: [https://youtu.be/duNmhKgtcsI](https://youtu.be/duNmhKgtcsI) I used this tutorial as a starting point and applied some of the technicques I leared to my code. :)
+To help me with this project I followed a great YouTube tutorial by Traversy Media: [https://youtu.be/duNmhKgtcsI](https://youtu.be/duNmhKgtcsI) I used this tutorial as a starting point and applied some of the techniques I leared to my code. :)
